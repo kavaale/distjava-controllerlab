@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header th:fragment="header">
+    <h1>Creating a Basic Website!</h1>
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/tutorial/html}">HTML</a></li>
+            <li><a th:href="@{/tutorial/css}">CSS</a></li>
+            <li><a th:href="@{/tutorial/netlify}">Netlify</a></li>
+        </ul>
+    </nav>
+</header>
+<footer th:fragment="footer">
+    Alex Kavanaugh 2021
+</footer>
+</body>
+</html>

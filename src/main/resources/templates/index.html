@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Tutorial</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div id="wrapper">
+<div th:insert="fragments/header-footer :: header"></div>
+    <div id="maincontent">
+        <h2>Introduction</h2>
+        <p>Hello my name is Alex and I'm here to teach you how to make a simple webpage using html and css. After that I
+            will show you how to post your website on a site called Netlify. The website we will be using for an example
+            is the website I have made in one of my past web development classes which I have provided a screenshot below.</p>
+        <img th:src="@{/img/tuthomepage.png}"/>
+    </div>
+<div th:insert="fragments/header-footer :: footer"></div>
+</div>
+</body>
+</html>

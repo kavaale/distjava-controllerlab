@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Tutorial</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div id="wrapper">
+<div th:insert="fragments/header-footer :: header"></div>
+    <div id="maincontent">
+        <h2>HTML</h2>
+        <p>First off, we will be covering how to create the skeleton of your website also
+            known as HTML. HTML is what we use to provide the content of the webpage whether
+        that be pictures or information in the form of text in various styles. Bellow you can see a simple website that
+        I created in one of my first web design classes. Breaking down what we see here, starting at the top we have the
+        head information which will be pretty standard for your early html files. this consists of your doctype which
+        is html and the wrapper that holds your html denoted with the html opening and closing tags. After that we have
+        the title which will show up in the tab of your website, followed by the character set which will not be something
+        you need to worry about for a bit. The next part is very important, this links your css file and if you don't do
+        this step the browser will not know to read your css file and apply it to the page. Lastly, another meta tag that
+        tells the browser the default size that this file is built for.</p>
+        <p>Next we have the header where have an h1 tag, this tag is in a series of different sized font styles that are
+        used to denote how important information is by making it larger therefore garnering more attention. After that,
+        we have the nav bar where you will be doing all of your navigation on the different pages. This makes words or
+        buttons on your nav bar for viewing the different pages with links that you provide after the href property.</p>
+        <p>After that, we have the main body of text. Here we see a img tag which allows you to use pictures inside your
+        document. All you need to do is provide the document somewhere in the file that your index file exists on and
+        provide a path to it through the src property. You can also set the size of the picture but be careful to keep
+        it in the ratio or else your picture my deform and look stretched vertically or horizontally. In the footer there
+        is nothing too special going on other than the link that goes to google which I'm assuming I included to provide
+        and email to send information to.</p>
+        <img th:src="@{/img/tuthtml.png}"/>
+    </div>
+<div th:insert="fragments/header-footer :: footer"></div>
+</div>
+</body>
+</html>

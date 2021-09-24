@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Tutorial</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div id="wrapper">
+<div th:insert="fragments/header-footer :: header"></div>
+    <div id="maincontent">
+        <h2>Netlify</h2>
+        <p>Now we will cover how to post your website on to a site called Netlify which allows free web hosting up to
+        a certain point. Starting out anything simple that you will be creating will not require any type of payment
+        by you to host on this site but when you get further into it they will ask for hosting fees. The first step
+        is putting your html and css files on github to give a repository to pull from in order to make the website.
+        After this is done you will go to Netlify, create an account if you haven't already and then when you get to your
+        home screen (shown below) you will click on "New site from Git". This will load your Github repositories and here
+        you are able to load one of your projects on to the site. You can visit my website posted on Netlify if you'd
+            like via this <b><a th:href="@{/tutorial/redirect-project}">link</a></b>.</p>
+        <img th:src="@{/img/tutnetlify.png}"/>
+    </div>
+<div th:insert="fragments/header-footer :: footer"></div>
+</div>
+</body>
+</html>

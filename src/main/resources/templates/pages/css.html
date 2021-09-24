@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Tutorial</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div id="wrapper">
+<div th:insert="fragments/header-footer :: header"></div>
+    <div id="maincontent">
+        <h2>CSS</h2>
+        <p>Second, we will be covering how to add some styling to your new boring blocks of text and pictures. This being
+        said there is a lot to unpack in this file and we will only be going over the basics. First thing you see when
+        you look at the file is an asterisk which tags the entire document. This particular instance of it applies a font
+        of monospace to the entire document. In the header, I applied some styling to the header to have that machine
+        picture integrated into the banner using the background-image property. The rest of the properties here are setting
+        positioning on the image and then the height of the banner and left padding so the title isn't right on the edge.
+        Padding is a property you use if you want extra empty space on the <b>inside</b> of an area and on the inverse of this you
+        can use margin to set extra empty space on the <b>outside</b> of an area. A good example of padding is the space
+        between the left part of the box and the summary content. If you look closely you should see about an inch of space,
+        this is padding.</p>
+        <p>In the body, you can see I set a background-color, this gives main background of the website a coloring kind
+        of like how the background of this website is purple, this would be done with a body tag. The ul tag stands for
+        unordered list and li stands for list item, when there is a call for a tag and then another tag right after it
+        it is calling for a "child" of the other tag. This means that it will change the styling of any li that is enclosed
+        in an ul tag. That should be enough to get you started on some simple css stylesheets for your websites.</p>
+        <img th:src="@{/img/tutcss.png}"/>
+    </div>
+<div th:insert="fragments/header-footer :: footer"></div>
+</div>
+</body>
+</html>
